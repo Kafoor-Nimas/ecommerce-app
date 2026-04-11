@@ -8,6 +8,7 @@ const Product = () => {
   const { products, currency } = useContext(ShopContext);
   const [productData, setProductData] = useState(false);
   const [image, setImage] = useState("");
+  const [size, setSize] = useState("");
 
   const fetchProductsData = async () => {
     products.map((item) => {
@@ -26,7 +27,7 @@ const Product = () => {
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
       {/* Product Data */}
       <div className="flex gap-12 flex-col sm:flex-row">
-        {/* Product Images */} 
+        {/* Product Images */}
         <div className="flex-1 flex flex-col-reverse sm:flex-row gap-2">
           <div className="flex sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full">
             {productData.image.map((item, index) => (
@@ -61,10 +62,21 @@ const Product = () => {
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
             {productData.description}
-            <div>
-              
-            </div>
           </p>
+          <div className="flex flex-col gap-4 my-8">
+            <p>Select Size</p>
+            <div className="flex gap-2">
+              {productData.sizes.map((item, index) => (
+                <button
+                  onClick={() => setSize(item)}
+                  className={`border py-2 px-4 bg-gray-100 border-gray-300 ${item === size ? "border-orange-500" : ""}`}
+                  key={index}
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
