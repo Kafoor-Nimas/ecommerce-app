@@ -91,6 +91,7 @@ const Product = () => {
             <p>Easy return and exchange policy within 7 days.</p>
           </div>
         </div>
+        
       </div>
 
       {/* Description & Review Section */}
