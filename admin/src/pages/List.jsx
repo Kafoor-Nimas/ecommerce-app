@@ -1,9 +1,30 @@
-import React from 'react'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { backendUrl } from "../App";
+import { toast } from "react-toastify";
 
 const List = () => {
-  return (
-    <div>List</div>
-  )
-}
+  const [list, setList] = useState([]);
 
-export default List
+  const fetchList = async () => {
+    try {
+      const response = await axios.get(backendUrl + "/api/product/list");
+
+      if (response.data.success) {
+        setList(response.data.products);
+      } else {
+        toast.error(response.data.message);
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message);
+    }
+  };
+
+  useEffect(() => {
+    fetchList();
+  }, []);
+  return <div>List</div>;
+};
+
+export default List;
