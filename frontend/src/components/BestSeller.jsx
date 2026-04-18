@@ -8,13 +8,11 @@ const BestSeller = () => {
   const [bestSeller, setBestSeller] = useState([]);
 
   useEffect(() => {
-    const bestSeller = products.filter((item) => item.bestseller);
-
-    setBestSeller(bestSeller.slice(0, 5));
-  }, []);
-
-  
-
+  const bestSeller = products.filter(
+    (item) => item.bestseller === true || item.bestseller === "true"
+  );
+  setBestSeller(bestSeller.slice(0, 5));
+}, [products]);
   return (
     <div className="my-10">
       <div className="text-center text-3xl py-8">

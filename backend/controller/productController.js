@@ -4,6 +4,8 @@ import productModel from "../models/productModel.js";
 // function for add product
 const addProduct = async (req, res) => {
   try {
+    console.log("req.body:", req.body); // 👈 add this
+
     const {
       name,
       description,
