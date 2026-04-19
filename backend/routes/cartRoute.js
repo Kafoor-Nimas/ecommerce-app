@@ -1,0 +1,14 @@
+import express from "express";
+import {
+  addToCart,
+  getUserCart,
+  updateCart,
+} from "../controller/cartController.js";
+
+const cartRouter = express.Router();
+
+cartRouter.post("/add", addToCart);
+cartRouter.post("/update", updateCart);
+cartRouter.post("/get", getUserCart);
+
+export default cartRouter;
