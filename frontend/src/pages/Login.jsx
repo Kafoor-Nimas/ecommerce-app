@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Login = () => {
-  const [currentState, setCurrentState] = useState("Sign Up");
+  const [currentState, setCurrentState] = useState("Login");
 
   const { token, setToken, navigate, backendUrl } = useContext(ShopContext);
 
@@ -40,16 +40,16 @@ const Login = () => {
         }
       }
     } catch (error) {
-      console.log(error); 
+      console.log(error);
       toast.error(error.message);
     }
   };
 
-  useEffect(()=>{
-    if(token){
-      navigate("/")
+  useEffect(() => {
+    if (token) {
+      navigate("/");
     }
-  },[token])
+  }, [token]);
 
   return (
     <form
