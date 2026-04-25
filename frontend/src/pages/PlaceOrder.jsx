@@ -89,9 +89,24 @@ const PlaceOrder = () => {
           if (responseStripe.data.success) {
             const { session_url } = responseStripe.data;
             window.location.replace(session_url);
-          }else{
-            toast.error(responseStripe.data.message)
+          } else {
+            toast.error(responseStripe.data.message);
           }
+
+          break;
+        }
+        case "razorpay": {
+          // const responseRazorpay = await axios.post(
+          //   backendUrl + "/api/order/razorpay",
+          //   orderData,
+          //   { headers: { token } },
+          // );
+
+          // if (responseRazorpay.data.success) {
+          //   console.log(responseRazorpay.data.order);
+          // } else {
+          toast.error("Razorpay payment not supported at the moment");
+          // }
 
           break;
         }
