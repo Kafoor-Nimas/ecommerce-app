@@ -104,7 +104,7 @@ Make sure you have the following installed:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ecommerce-app.git
+git clone https://github.com/Kafoor-Nimas/ecommerce-app.git
 cd ecommerce-app
 ```
 
@@ -120,12 +120,11 @@ npm install
 Create a `.env` file in the `backend/` folder:
 
 ```env
-PORT=4000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
-CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+CLOUDINARY_SECRET_KEY=your_cloudinary_api_secret
 STRIPE_SECRET_KEY=your_stripe_secret_key
 ADMIN_EMAIL=admin@example.com
 ADMIN_PASSWORD=your_admin_password
@@ -134,7 +133,7 @@ ADMIN_PASSWORD=your_admin_password
 Start the backend server:
 
 ```bash
-npm run dev
+npm run server
 ```
 
 Backend runs on: `http://localhost:4000`
