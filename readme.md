@@ -196,7 +196,7 @@ This project uses **Stripe** for online payments.
 
 ---
 
-## 📸 Screenshots
+<!-- ## 📸 Screenshots
 
 > Add your screenshots here
 
@@ -208,7 +208,26 @@ This project uses **Stripe** for online payments.
 | Checkout Page | ![Checkout](#) |
 | Admin Dashboard | ![Admin](#) |
 
----
+--- -->
+## 📸 Screenshots
+
+### 🛍️ Home Page
+![Home Page](frontend/public/home.png)
+
+### 👗 Collection Page
+![Collection Page](frontend/public/collection.png)
+
+### 🛒 Cart Page
+![Cart Page](frontend/public/cart.png)
+
+### 💳 Checkout Page
+![Checkout Page](frontend/public/checkout.png)
+
+### 📦 Product Page
+![Product Page](frontend/public/product.png)
+
+### 🛠️ Admin Panel
+![Admin Panel](frontend/public/admin.png)
 
 ## 🔗 API Endpoints
 
