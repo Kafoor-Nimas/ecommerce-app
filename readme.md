@@ -217,14 +217,14 @@ This project uses **Stripe** for online payments.
 ### 👗 Collection Page
 ![Collection Page](frontend/public/collection.png)
 
+### 📦 Product Page
+![Product Page](frontend/public/product.png)
+
 ### 🛒 Cart Page
 ![Cart Page](frontend/public/cart.png)
 
 ### 💳 Checkout Page
 ![Checkout Page](frontend/public/checkout.png)
-
-### 📦 Product Page
-![Product Page](frontend/public/product.png)
 
 ### 🛠️ Admin Panel
 ![Admin Panel](frontend/public/admin.png)
@@ -290,17 +290,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
----
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
+**Nimas Kafoor**
+- GitHub: [@Nimas](https://github.com/Kafoor-Nimas)
+- LinkedIn: [Nimas-Kafoor](www.linkedin.com/in/nimas-kafoor)
 
 ---
 
