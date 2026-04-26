@@ -295,7 +295,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 **Nimas Kafoor**
 - GitHub: [@Nimas](https://github.com/Kafoor-Nimas)
-- LinkedIn: [Nimas-Kafoor](www.linkedin.com/in/nimas-kafoor)
+- LinkedIn: [Nimas-Kafoor](https://www.linkedin.com/in/nimas-kafoor)
 
 ---
 
